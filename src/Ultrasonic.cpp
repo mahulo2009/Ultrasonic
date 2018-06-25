@@ -31,8 +31,8 @@ unsigned int Ultrasonic::read()
 {
 	unsigned int duration =	update_();
 	unsigned int distance = duration * 10 / 292 / 2;
-  #ifdef ROBOT_SONAR_DEBUG
-	Serial.print("Sonar::read():");
+  #ifdef ROBOT_ULTRASONIC_DEBUG
+	Serial.print("Ultrasonic::read():");
 	Serial.print("\t");
 	Serial.print(distance);
 	Serial.print("\n");
