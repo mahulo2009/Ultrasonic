@@ -1,2 +1,2 @@
-Sonar	KEYWORD1
+Ultrasonic	KEYWORD1
 
