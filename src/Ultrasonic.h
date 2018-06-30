@@ -1,7 +1,7 @@
-#ifndef Robot_Ultrasonic_H
-#define Robot_Ultrasonic_H
+#ifndef Ultrasonic_H
+#define Ultrasonic_H
 
-#define ROBOT_ULTRASONIC_DEBUG 1
+#define ULTRASONIC_DEBUG 1
 
 
 #include "Arduino.h"
