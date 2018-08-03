@@ -8,12 +8,12 @@ Ultrasonic::Ultrasonic()
 void Ultrasonic::attachTrigger(int pin)
 {
 	this->pin_trigger_=pin;
-  pinMode(pin, OUTPUT);
+  	pinMode(pin, OUTPUT);
 }
 void Ultrasonic::attachEcho(int pin)
 {
 	this->pin_echo_=pin;
-  pinMode(pin, INPUT);
+  	pinMode(pin, INPUT);
 }
 
 unsigned int Ultrasonic::update_()
@@ -31,12 +31,13 @@ unsigned int Ultrasonic::read()
 {
 	unsigned int duration =	update_();
 	unsigned int distance = duration * 10 / 292 / 2;
-  #ifdef ULTRASONIC_DEBUG
+  	#ifdef ULTRASONIC_DEBUG
 	Serial.print("Ultrasonic::read():");
 	Serial.print("\t");
 	Serial.print(distance);
 	Serial.print("\n");
-  #endif
+  	#endif
+
 	return distance;
 }
 
